@@ -1062,13 +1062,20 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  padding: 24px;
+  max-width: 95%;
+  padding: 16px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 479px) {
   .modal {
     max-width: 392px;
-    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding: 24px;
   }
 }
 
@@ -1313,7 +1320,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   padding: 40px;
   padding-top: 80px;
   background-color: #FFFFFF;
-  z-index: 99;
+  z-index: 200;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -1381,12 +1388,24 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   line-height: 40px;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-contacts-link:hover,
+  .mobile-contacts-link:focus {
+    font-size: 25px;
+  }
+}
 .mobile-socials {
   display: flex;
   align-items: center;
   gap: 56px;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-socials {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
 
 .mobile-socials-link {
   background-color: var(--color-primary-brand);
