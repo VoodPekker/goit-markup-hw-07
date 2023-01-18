@@ -21,16 +21,24 @@
         <a class="logo-top logo" href="./index.html">
           <span class="logo-span">WEB</span>STUDIO
         </a>
-        <ul class="header-list">
-          <li><a class="header-link" href="./index.html">Studio</a></li>
-          <li><a class="header-link active" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="header-link" href="">Contacts</a></li>
-        </ul>
       </nav>
-      <ul class="header-adress">
+      
+      <ul class="header-list nav-list">
+        <li><a class="header-link active"  href="./index.html">Studio</a></li>
+        <li><a class="header-link" href="./portfolio.html">Portfolio</a></li>
+        <li><a class="header-link" href="">Contacts</a></li>
+      </ul>
+      
+      <ul class="header-adress nav-list">
         <li><a class="header-adress-link text" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="header-adress-link text" href="tel:+11(000)111-11-11">+11(000)111-11-11</a></li>
       </ul>
+      
+      <button class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="menu-btn-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 22">
+        <path stroke="#2E2F42" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M1.348 20.043h29.538M1.348 10.735h29.538M1.348 1.428h29.538"/>
+      </svg>
+      </button>
     </div>
   </header>
 
@@ -49,7 +57,24 @@
         <ul class="design-flex">
           <li class="design-card">
             <div class="design-card-over">
-              <img class="design-card-image" src="./image/port-img-1.jpg" width="360" height="300" alt="Screenshots app">
+              <picture>
+              <!-- Desktop screen -->
+              <source media="(min-width: 1200px)"
+                srcset="./image/portfolio/webp/img-1_desk@1x.webp 1x, ./image/portfolio/webp/img-1_desk@2x.webp 2x" type="image/webp" />
+              <source media="(min-width: 1200px)"
+                srcset="./image/portfolio/jpg/img-1_desk@1x.jpg 1x, ./image/portfolio/jpg/img-1_desk@2x.jpg 2x" type="image/jpg" />
+              <!-- Tablet screen -->
+              <source media="(min-width: 768px)"
+                srcset="./image/portfolio/webp/img-1_tab@1x.webp 1x, ./image/portfolio/webp/img-1_tab@2x.webp 2x" type="image/webp" />
+              <source media="(min-width: 768px)"
+                srcset="./image/portfolio/jpg/img-1_tab@1x.jpg 1x, ./image/portfolio/jpg/img-1_tab@2x.jpg 2x" type="image/jpg" />
+              <!-- Mobile screen -->
+              <source media="(max-width: 767px)"
+                srcset="./image/portfolio/webp/img-1_mob@1x.webp 1x, ./image/portfolio/webp/img-1_mob@2x.webp 2x" type="image/webp" />
+              <source media="(max-width: 767px)"
+                srcset="./image/portfolio/jpg/img-1_mob@1x.jpg 1x, ./image/portfolio/jpg/img-1_mob@2x.jpg 2x" type="image/jpg" />
+              <img class="design-card-image" src="./image/portfolio/jpg/img-1_desk@1x.jpg" alt="Screenshots app" loading="lazy" />
+              </picture>
               <div class="overlay">
                 <p class="design-card-hover text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -61,7 +86,27 @@
           </li>
           <li class="design-card">
             <div class="design-card-over">
-              <img class="design-card-image" src="./image/port-img-2.jpg" width="360" height="300" alt="Phone payment">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/webp/img-2_desk@1x.webp 1x, ./image/portfolio/webp/img-2_desk@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/jpg/img-2_desk@1x.jpg 1x, ./image/portfolio/jpg/img-2_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/webp/img-2_tab@1x.webp 1x, ./image/portfolio/webp/img-2_tab@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/jpg/img-2_tab@1x.jpg 1x, ./image/portfolio/jpg/img-2_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/webp/img-2_mob@1x.webp 1x, ./image/portfolio/webp/img-2_mob@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/jpg/img-2_mob@1x.jpg 1x, ./image/portfolio/jpg/img-2_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="design-card-image" src="./image/portfolio/jpg/img-2_desk@1x.jpg" alt="Phone payment" loading="lazy" />
+              </picture>
               <div class="overlay">
                 <p class="design-card-hover text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -73,7 +118,27 @@
           </li>
           <li class="design-card">
             <div class="design-card-over">
-              <img class="design-card-image" src="./image/port-img-3.jpg" width="360" height="300" alt="Notebook and phone">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/webp/img-3_desk@1x.webp 1x, ./image/portfolio/webp/img-3_desk@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/jpg/img-3_desk@1x.jpg 1x, ./image/portfolio/jpg/img-3_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/webp/img-3_tab@1x.webp 1x, ./image/portfolio/webp/img-3_tab@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/jpg/img-3_tab@1x.jpg 1x, ./image/portfolio/jpg/img-3_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/webp/img-3_mob@1x.webp 1x, ./image/portfolio/webp/img-3_mob@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/jpg/img-3_mob@1x.jpg 1x, ./image/portfolio/jpg/img-3_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="design-card-image" src="./image/portfolio/jpg/img-3_desk@1x.jpg" alt="Notebook and phone" loading="lazy" />
+              </picture>
               <div class="overlay">
                 <p class="design-card-hover text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -85,7 +150,28 @@
           </li>
           <li class="design-card">
             <div class="design-card-over">
-              <img class="design-card-image" src="./image/port-img-4.jpg" width="360" height="300" alt="Car interior">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/webp/img-4_desk@1x.webp 1x, ./image/portfolio/webp/img-4_desk@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/jpg/img-4_desk@1x.jpg 1x, ./image/portfolio/jpg/img-4_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/webp/img-4_tab@1x.webp 1x, ./image/portfolio/webp/img-4_tab@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/jpg/img-4_tab@1x.jpg 1x, ./image/portfolio/jpg/img-4_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/webp/img-4_mob@1x.webp 1x, ./image/portfolio/webp/img-4_mob@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/jpg/img-4_mob@1x.jpg 1x, ./image/portfolio/jpg/img-4_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="design-card-image" src="./image/portfolio/jpg/img-4_desk@1x.jpg" alt="Car interior"
+                  loading="lazy" />
+              </picture>
               <div class="overlay">
                 <p class="design-card-hover text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -97,7 +183,27 @@
           </li>
           <li class="design-card">
             <div class="design-card-over">
-              <img class="design-card-image" src="./image/port-img-5.jpg" width="360" height="300" alt="Screen image">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/webp/img-5_desk@1x.webp 1x, ./image/portfolio/webp/img-5_desk@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/jpg/img-5_desk@1x.jpg 1x, ./image/portfolio/jpg/img-5_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/webp/img-5_tab@1x.webp 1x, ./image/portfolio/webp/img-5_tab@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/jpg/img-5_tab@1x.jpg 1x, ./image/portfolio/jpg/img-5_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/webp/img-5_mob@1x.webp 1x, ./image/portfolio/webp/img-5_mob@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/jpg/img-5_mob@1x.jpg 1x, ./image/portfolio/jpg/img-5_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="design-card-image" src="./image/portfolio/jpg/img-5_desk@1x.jpg" alt="Screen image" loading="lazy" />
+              </picture>
               <div class="overlay">
                 <p class="design-card-hover text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -109,7 +215,27 @@
           </li>
           <li class="design-card">
             <div class="design-card-over">
-              <img class="design-card-image" src="./image/port-img-6.jpg" width="360" height="300" alt="Girl">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/webp/img-6_desk@1x.webp 1x, ./image/portfolio/webp/img-6_desk@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/jpg/img-6_desk@1x.jpg 1x, ./image/portfolio/jpg/img-6_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/webp/img-6_tab@1x.webp 1x, ./image/portfolio/webp/img-6_tab@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/jpg/img-6_tab@1x.jpg 1x, ./image/portfolio/jpg/img-6_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/webp/img-6_mob@1x.webp 1x, ./image/portfolio/webp/img-6_mob@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/jpg/img-6_mob@1x.jpg 1x, ./image/portfolio/jpg/img-6_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="design-card-image" src="./image/portfolio/jpg/img-6_desk@1x.jpg" alt="Girl" loading="lazy" />
+              </picture>
               <div class="overlay">
                 <p class="design-card-hover text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -121,7 +247,27 @@
           </li>
           <li class="design-card">
             <div class="design-card-over">
-              <img class="design-card-image" src="./image/port-img-7.jpg" width="360" height="300" alt="Smartphone">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/webp/img-7_desk@1x.webp 1x, ./image/portfolio/webp/img-7_desk@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/jpg/img-7_desk@1x.jpg 1x, ./image/portfolio/jpg/img-7_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/webp/img-7_tab@1x.webp 1x, ./image/portfolio/webp/img-7_tab@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/jpg/img-7_tab@1x.jpg 1x, ./image/portfolio/jpg/img-7_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/webp/img-7_mob@1x.webp 1x, ./image/portfolio/webp/img-7_mob@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/jpg/img-7_mob@1x.jpg 1x, ./image/portfolio/jpg/img-7_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="design-card-image" src="./image/portfolio/jpg/img-7_desk@1x.jpg" alt="Smartphone" loading="lazy" />
+              </picture>
               <div class="overlay">
                 <p class="design-card-hover text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -133,7 +279,27 @@
           </li>
           <li class="design-card">
             <div class="design-card-over">
-              <img class="design-card-image" src="./image/port-img-8.jpg" width="360" height="300" alt="Food">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/webp/img-8_desk@1x.webp 1x, ./image/portfolio/webp/img-8_desk@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/jpg/img-8_desk@1x.jpg 1x, ./image/portfolio/jpg/img-8_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/webp/img-8_tab@1x.webp 1x, ./image/portfolio/webp/img-8_tab@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/jpg/img-8_tab@1x.jpg 1x, ./image/portfolio/jpg/img-8_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/webp/img-8_mob@1x.webp 1x, ./image/portfolio/webp/img-8_mob@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/jpg/img-8_mob@1x.jpg 1x, ./image/portfolio/jpg/img-8_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="design-card-image" src="./image/portfolio/jpg/img-8_desk@1x.jpg" alt="Food" loading="lazy" />
+              </picture>
               <div class="overlay">
                 <p class="design-card-hover text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -145,7 +311,27 @@
           </li>
           <li class="design-card">
             <div class="design-card-over">
-            <img class="design-card-image" src="./image/port-img-9.jpg" width="360" height="300" alt="Coffee">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/webp/img-9_desk@1x.webp 1x, ./image/portfolio/webp/img-9_desk@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/portfolio/jpg/img-9_desk@1x.jpg 1x, ./image/portfolio/jpg/img-9_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/webp/img-9_tab@1x.webp 1x, ./image/portfolio/webp/img-9_tab@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/portfolio/jpg/img-9_tab@1x.jpg 1x, ./image/portfolio/jpg/img-9_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/webp/img-9_mob@1x.webp 1x, ./image/portfolio/webp/img-9_mob@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/portfolio/jpg/img-9_mob@1x.jpg 1x, ./image/portfolio/jpg/img-9_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="design-card-image" src="./image/portfolio/jpg/img-9_desk@1x.jpg" alt="Coffee" loading="lazy" />
+              </picture>
               <div class="overlay">
                 <p class="design-card-hover text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -183,8 +369,7 @@
             </a>
           </li>
           <li class="social-card-soc-item soc-item">
-            <a class="social-card-soc-link soc-link" href="https://twitter.com/" target="_blank"
-              rel="noreferrer noopener">
+            <a class="social-card-soc-link soc-link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
               <svg class="social-card-soc-svg">
                 <use href="./image/icon.svg#icon-twitter"></use>
               </svg>
@@ -199,8 +384,7 @@
             </a>
           </li>
           <li class="social-card-soc-item soc-item">
-            <a class="social-card-soc-link soc-link" href="https://linkedin.com/" target="_blank"
-              rel="noreferrer noopener">
+            <a class="social-card-soc-link soc-link" href="https://linkedin.com/" target="_blank" rel="noreferrer noopener">
               <svg class="social-card-soc-svg">
                 <use href="./image/icon.svg#icon-linkedin"></use>
               </svg>
@@ -209,19 +393,91 @@
         </ul>
       </div>
       <div class="subscribe">
-        <h2 class="subscribe-title title-min">Subscribe</h2>
-        <input class="subscribe-input" type="email" name="user_email" placeholder="E-mail" />
-        <button class="subscribe-btn btn" type="submit">Subscribe</button>
-        <svg class="subscribe-icon" width="24" height="24">
-          <use href="./image/icon.svg#icon-subscribe"></use>
-        </svg>
+        <form class="subscribe_form" name="subscribe_form">
+          <h2 class="subscribe-title title-min">Subscribe</h2>
+          <input class="subscribe-input" type="email" name="user_email" placeholder="E-mail" required>
+          <button class="subscribe-btn btn" type="submit">Subscribe</button>
+          <div class="svg-pos">
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./image/icon.svg#icon-subscribe"></use>
+            </svg>
+          </div>
+        </form>
+        </form>
       </div>
     </div>
   </footer>
 
+  <!-- Mobile menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="modal-btn menu-toggle js-close-menu">
+      <svg class="modal-icon" width="8" height="8">
+        <use href="./image/icon.svg#icon-cross"></use>
+      </svg>
+    </button>
 
-
-
+    <ul class="mobile-menu">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="./index.html">Studio</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="./portfolio.html">Portfolio</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">Contacts</a>
+      </li>
+    </ul>
   
+    <ul class="mobile-contacts">
+      <li class="mobile-contacts-item">
+        <a class="mobile-contacts-link accent" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+      </li>
+      <li class="mobile-contacts-item">
+        <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+
+
+    <ul class="mobile-socials">
+      <li class="mobile-socials-item soc-item">
+      <a class="mobile-socials-link soc-link" href="https://www.instagram.com/" target="_blank"
+          rel="noreferrer noopener">
+          <svg class="mobile-socials-svg">
+            <use href="./image/icon.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-socials-item soc-item">
+        <a class="mobile-socials-link soc-link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+          <svg class="mobile-socials-svg">
+            <use href="./image/icon.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-socials-item soc-item">
+        <a class="mobile-socials-link soc-link" href="https://www.facebook.com/" target="_blank"
+          rel="noreferrer noopener">
+          <svg class="mobile-socials-svg">
+            <use href="./image/icon.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-socials-item soc-item">
+        <a class="mobile-socials-link soc-link" href="https://linkedin.com/" target="_blank" rel="noreferrer noopener">
+          <svg class="mobile-socials-svg">
+            <use href="./image/icon.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
+  </script>
+
+  <script src="./js/mobile-menu.js"></script>
+
 </body>
 </html>

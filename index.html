@@ -20,21 +20,30 @@
           <a class="logo-top logo" href="./index.html">
             <span class="logo-span">WEB</span>STUDIO
           </a>
-          <ul class="header-list">
-            <li><a class="header-link active"  href="./index.html">Studio</a></li>
-            <li><a class="header-link" href="./portfolio.html">Portfolio</a></li>
-            <li><a class="header-link" href="">Contacts</a></li>
-          </ul>
         </nav>
-        <ul class="header-adress">
+        
+        <ul class="header-list nav-list">
+          <li><a class="header-link active"  href="./index.html">Studio</a></li>
+          <li><a class="header-link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="header-link" href="">Contacts</a></li>
+        </ul>
+        
+        <ul class="header-adress nav-list">
           <li><a class="header-adress-link text" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="header-adress-link text" href="tel:+11(000)111-11-11">+11(000)111-11-11</a></li>
         </ul>
+        
+        <button class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-btn-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 22">
+          <path stroke="#2E2F42" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M1.348 20.043h29.538M1.348 10.735h29.538M1.348 1.428h29.538"/>
+        </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <section class="hero">
+
         <div class="container">
           <h1 class="hero-main">Effective Solutions<br>for Your Business</h1>
           <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
@@ -101,9 +110,35 @@
         <div class="container">
           <h2 class="create-title title">What are we doing</h2>
           <ul class="create-list">
-              <li><img class="create-img" src="./image/img-1.jpg" width="360" height="300" alt="Monitor"></li>
-              <li><img class="create-img" src="./image/img-2.jpg" width="360" height="300" alt="Smartphone"></li>
-              <li><img class="create-img" src="./image/img-3.jpg" width="360" height="300" alt="Smartphone+notebook"></li>
+              <li>
+                <picture>
+                  <!-- ONLY  Desktop   screen -->
+                  <source media="(min-width: 1200px)" srcset="./image/main/webp/img-1_desk@1x.webp 1x, ./image/main/webp/img-1_desk@2x.webp 2x" 
+                    type="image/webp" />
+                  <source media="(min-width: 1200px)" srcset="./image/main/jpg/img-1_desk@1x.jpg 1x, ./image/main/jpg/img-1_desk@2x.jpg 2x"
+                    type="image/jpg" />
+                  <img class="create-img" src="./image/main/jpg/img-1_desk@1x.jpg" width="360" height="300" alt="Monitor" loading="lazy" />
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <!-- ONLY  Desktop   screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./image/main/webp/img-2_desk@1x.webp 1x, ./image/main/webp/img-2_desk@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 1200px)"
+                    srcset="./image/main/jpg/img-2_desk@1x.jpg 1x, ./image/main/jpg/img-2_desk@2x.jpg 2x" type="image/jpg" />
+                  <img class="create-img" src="./image/main/jpg/img-2_desk@1x.jpg" width="360" height="300" alt="Smartphone" loading="lazy" />
+                </picture>
+              <li>
+                <picture>
+                  <!-- ONLY  Desktop   screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./image/main/webp/img-3_desk@1x.webp 1x, ./image/main/webp/img-3_desk@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 1200px)"
+                    srcset="./image/main/jpg/img-3_desk@1x.jpg 1x, ./image/main/jpg/img-3_desk@2x.jpg 2x" type="image/jpg" />
+                  <img class="create-img" src="./image/main/jpg/img-3_desk@1x.jpg" width="360" height="300" alt="Smartphone+notebook" loading="lazy" />
+                </picture>
+              </li>
           </ul>
         </div>
       </section>
@@ -113,7 +148,24 @@
           <h2 class="personal-title title">Our Team</h2>
           <ul class="personal-list">
             <li class="personal-card">
-              <img class="personal-card-image" src="./image/photo1.jpg" width="264" height="260" alt="Photo Mark Guerrero">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)" srcset="./image/main/webp/photo1_desk@1x.webp 1x, ./image/main/webp/photo1_desk@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)" srcset="./image/main/jpg/photo1_desk@1x.jpg 1x, ./image/main/jpg/photo1_desk@2x.jpg 2x"
+                  type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)" srcset="./image/main/webp/photo1_tab@1x.webp 1x, ./image/main/webp/photo1_tab@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(min-width: 768px)" srcset="./image/main/jpg/photo1_tab@1x.jpg 1x, ./image/main/jpg/photo1_tab@2x.jpg 2x"
+                  type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)" srcset="./image/main/webp/photo1_mob@1x.webp 1x, ./image/main/webp/photo1_mob@2x.webp 2x"
+                  type="image/webp" />
+                <source media="(max-width: 767px)" srcset="./image/main/jpg/photo1_mob@1x.jpg 1x, ./image/main/jpg/photo1_mob@2x.jpg 2x"
+                  type="image/jpg" />
+                <img class="personal-card-image" src="./image/main/jpg/photo1_desk@1x.jpg" width="264" height="260" alt="Photo Mark Guerrero" loading="lazy" />
+              </picture>
               <div class="personal-cont">
                 <h3 class="personal-card-title title-min">Mark Guerrero</h3>
                 <p class="personal-card-text text">Product Designer</p>
@@ -150,7 +202,25 @@
               </div>
             </li>
             <li class="personal-card">
-              <img class="personal-card-image" src="./image/photo2.jpg" width="264" height="260" alt="Photo Tom Ford">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/main/webp/photo2_desk@1x.webp 1x, ./image/main/webp/photo2_desk@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/main/jpg/photo2_desk@1x.jpg 1x, ./image/main/jpg/photo2_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/main/webp/photo2_tab@1x.webp 1x, ./image/main/webp/photo2_tab@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/main/jpg/photo2_tab@1x.jpg 1x, ./image/main/jpg/photo2_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/main/webp/photo2_mob@1x.webp 1x, ./image/main/webp/photo2_mob@2x.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/main/jpg/photo2_mob@1x.jpg 1x, ./image/main/jpg/photo2_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="personal-card-image" src="./image/main/jpg/photo2_desk@1x.jpg" width="264" height="260"
+                  alt="Photo Tom Ford" loading="lazy" />
+              </picture>
               <div class="personal-cont">
                 <h3 class="personal-card-title title-min">Tom Ford</h3>
                 <p class="personal-card-text text">Frontend Developer</p>
@@ -187,44 +257,81 @@
               </div>
             </li>
             <li class="personal-card">
-              <img class="personal-card-image" src="./image/photo3.jpg" width="264" height="260" alt="Photo Camila Garcia">
-                <div class="personal-cont">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/main/webp/photo3_desk@1x.webp 1x, ./image/main/webp/photo3_desk@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/main/jpg/photo3_desk@1x.jpg 1x, ./image/main/jpg/photo3_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/main/webp/photo3_tab@1x.webp 1x, ./image/main/webp/photo3_tab@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/main/jpg/photo3_tab@1x.jpg 1x, ./image/main/jpg/photo3_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/main/webp/photo3_mob@1x.webp 1x, ./image/main/webp/photo3_mob@2x.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/main/jpg/photo3_mob@1x.jpg 1x, ./image/main/jpg/photo3_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="personal-card-image" src="./image/main/jpg/photo3_desk@1x.jpg" width="264" height="260"
+                  alt="Photo Camila Garcia" loading="lazy" />
+              </picture>
+              <div class="personal-cont">
                 <h3 class="personal-card-title title-min">Camila Garcia</h3>
-              <p class="personal-card-text text">Marketing</p>
-              <ul class="personal-card-soc card-soc">
-                <li class="personal-card-soc-item soc-item">
-                  <a class="personal-card-soc-link soc-link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                    <svg class="personal-card-soc-svg">
-                      <use href="./image/icon.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="personal-card-soc-item soc-item">
-                  <a class="personal-card-soc-link soc-link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                    <svg class="personal-card-soc-svg">
-                      <use href="./image/icon.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="personal-card-soc-item soc-item">
-                  <a class="personal-card-soc-link soc-link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-                    <svg class="personal-card-soc-svg">
-                      <use href="./image/icon.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="personal-card-soc-item soc-item">
-                  <a class="personal-card-soc-link soc-link" href="https://linkedin.com/" target="_blank" rel="noreferrer noopener">
-                    <svg class="personal-card-soc-svg">
-                      <use href="./image/icon.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+                <p class="personal-card-text text">Marketing</p>
+                <ul class="personal-card-soc card-soc">
+                  <li class="personal-card-soc-item soc-item">
+                    <a class="personal-card-soc-link soc-link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                      <svg class="personal-card-soc-svg">
+                        <use href="./image/icon.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="personal-card-soc-item soc-item">
+                    <a class="personal-card-soc-link soc-link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+                      <svg class="personal-card-soc-svg">
+                        <use href="./image/icon.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="personal-card-soc-item soc-item">
+                    <a class="personal-card-soc-link soc-link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+                      <svg class="personal-card-soc-svg">
+                        <use href="./image/icon.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="personal-card-soc-item soc-item">
+                    <a class="personal-card-soc-link soc-link" href="https://linkedin.com/" target="_blank" rel="noreferrer noopener">
+                      <svg class="personal-card-soc-svg">
+                        <use href="./image/icon.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="personal-card">
-              <img class="personal-card-image" src="./image/photo4.jpg" width="264" height="260" alt="Photo Daniel Wilson">
+
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./image/main/webp/photo4_desk@1x.webp 1x, ./image/main/webp/photo4_desk@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./image/main/jpg/photo4_desk@1x.jpg 1x, ./image/main/jpg/photo4_desk@2x.jpg 2x" type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./image/main/webp/photo4_tab@1x.webp 1x, ./image/main/webp/photo4_tab@2x.webp 2x" type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./image/main/jpg/photo4_tab@1x.jpg 1x, ./image/main/jpg/photo4_tab@2x.jpg 2x" type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./image/main/webp/photo4_mob@1x.webp 1x, ./image/main/webp/photo4_mob@2x.webp 2x" type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./image/main/jpg/photo4_mob@1x.jpg 1x, ./image/main/jpg/photo4_mob@2x.jpg 2x" type="image/jpg" />
+                <img class="personal-card-image" src="./image/main/jpg/photo4_desk@1x.jpg" width="264" height="260"
+                  alt="Photo Daniel Wilson" loading="lazy" />
+              </picture>
               <div class="personal-cont">
                 <h3 class="personal-card-title title-min">Daniel Wilson</h3>
                 <p class="personal-card-text text">UI Designer</p>
@@ -314,6 +421,9 @@
       </section>
     </main>
 
+
+
+
     <footer class="footer">
       <div class="container">
         <div class="logo-bottom-cont">
@@ -359,13 +469,15 @@
           </ul>
         </div>
         <div class="subscribe">
-          <form name="subscribe_form">
+          <form class="subscribe_form" name="subscribe_form">
             <h2 class="subscribe-title title-min">Subscribe</h2>
             <input class="subscribe-input" type="email" name="user_email" placeholder="E-mail" required>
             <button class="subscribe-btn btn" type="submit">Subscribe</button>
-            <svg class="subscribe-icon" width="24" height="24">
+            <div class="svg-pos">
+              <svg class="subscribe-icon" width="24" height="24">
               <use href="./image/icon.svg#icon-subscribe"></use>
-            </svg>
+              </svg>
+           </div>
           </form>
         </div>
       </div>
@@ -427,6 +539,78 @@
     </div>
 
 
+
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-btn menu-toggle js-close-menu">
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./image/icon.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Contacts</a>
+        </li>
+      </ul>
+    
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link accent" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+
+      <ul class="mobile-socials">
+        <li class="mobile-socials-item soc-item">
+        <a class="mobile-socials-link soc-link" href="https://www.instagram.com/" target="_blank"
+            rel="noreferrer noopener">
+            <svg class="mobile-socials-svg">
+              <use href="./image/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item soc-item">
+          <a class="mobile-socials-link soc-link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+            <svg class="mobile-socials-svg">
+              <use href="./image/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item soc-item">
+          <a class="mobile-socials-link soc-link" href="https://www.facebook.com/" target="_blank"
+            rel="noreferrer noopener">
+            <svg class="mobile-socials-svg">
+              <use href="./image/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item soc-item">
+          <a class="mobile-socials-link soc-link" href="https://linkedin.com/" target="_blank" rel="noreferrer noopener">
+            <svg class="mobile-socials-svg">
+              <use href="./image/icon.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
